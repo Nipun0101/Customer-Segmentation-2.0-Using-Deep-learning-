@@ -1,7 +1,7 @@
 # 🧠 Customer Segmentation with Deep Learning (DSE3120)
 
 An autoencoder compresses each customer to 2 numbers and K-Means groups them (Part A). A feedforward neural network predicts who accepts a marketing campaign (Part B). A Streamlit app presents the results and runs the trained networks on a new customer.
-
+You can run it through: https://ms5fbtg3megpgcrqhpakfs.streamlit.app
 ## Files
 | File | Purpose |
 |---|---|
