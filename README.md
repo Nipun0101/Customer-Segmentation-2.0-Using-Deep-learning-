@@ -34,4 +34,4 @@ python dl_segmentation.py
 ## Honest results
 The autoencoder reconstructs customers better than PCA, but its clustering gain is mixed. The neural network has a better ROC-AUC than logistic regression but not a better F1.
 
-Author: Nipun
+Author: Nipun Bansal
