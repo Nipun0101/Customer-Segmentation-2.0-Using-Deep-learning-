@@ -1,0 +1,120 @@
+{
+  "customers": 2212,
+  "partA": {
+    "epochs_trained": 274,
+    "reconstruction_mse": {
+      "pca_2d": 0.3975,
+      "autoencoder_2d": 0.2618
+    },
+    "kmeans_on_7_features": {
+      "silhouette": 0.1837,
+      "davies_bouldin": 1.6024
+    },
+    "kmeans_on_pca_2d": {
+      "silhouette": 0.1461,
+      "davies_bouldin": 1.9602
+    },
+    "kmeans_on_autoencoder_2d": {
+      "silhouette": 0.1934,
+      "davies_bouldin": 2.2584
+    },
+    "agreement_ARI_autoencoder_vs_baseline": 0.273,
+    "cluster_sizes_autoencoder": [
+      535,
+      96,
+      1036,
+      173,
+      163,
+      209
+    ]
+  },
+  "partB_tuning": [
+    {
+      "hidden": [
+        16
+      ],
+      "learning_rate": 0.001,
+      "val_auc": 0.8223
+    },
+    {
+      "hidden": [
+        16
+      ],
+      "learning_rate": 0.01,
+      "val_auc": 0.833
+    },
+    {
+      "hidden": [
+        32,
+        16
+      ],
+      "learning_rate": 0.001,
+      "val_auc": 0.8194
+    },
+    {
+      "hidden": [
+        32,
+        16
+      ],
+      "learning_rate": 0.01,
+      "val_auc": 0.8191
+    },
+    {
+      "hidden": [
+        64,
+        32
+      ],
+      "learning_rate": 0.001,
+      "val_auc": 0.8172
+    },
+    {
+      "hidden": [
+        64,
+        32
+      ],
+      "learning_rate": 0.01,
+      "val_auc": 0.8195
+    }
+  ],
+  "partB_best_config": {
+    "hidden": [
+      16
+    ],
+    "learning_rate": 0.01
+  },
+  "partB": {
+    "positive_rate": 0.1505,
+    "test_size": 443,
+    "always_predict_no": {
+      "accuracy": 0.8488,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "logistic_regression": {
+      "accuracy": 0.7427,
+      "precision": 0.3309,
+      "recall": 0.6866,
+      "f1": 0.4466,
+      "roc_auc": 0.7875
+    },
+    "neural_network": {
+      "accuracy": 0.7562,
+      "precision": 0.3306,
+      "recall": 0.597,
+      "f1": 0.4255,
+      "roc_auc": 0.8131
+    },
+    "confusion_matrix_nn": [
+      [
+        295,
+        81
+      ],
+      [
+        27,
+        40
+      ]
+    ],
+    "epochs_trained": 25
+  }
+}
