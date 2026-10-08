@@ -1,13 +1,13 @@
 # 🧠 Customer Segmentation with Deep Learning (DSE3120)
 
 An autoencoder compresses each customer to 2 numbers and K-Means groups them (Part A). A feedforward neural network predicts who accepts a marketing campaign (Part B). A Streamlit app presents the results and runs the trained networks on a new customer.
-You can run it through: https://ms5fbtg3megpgcrqhpakfs.streamlit.app
+
 ## Files
 | File | Purpose |
 |---|---|
 | `dl_segmentation.py` | Trains both networks (Keras/TensorFlow), saves results and weights |
 | `app.py` | Streamlit app (runs the saved weights with numpy, so TensorFlow is NOT needed to host it) |
-| `dl_results/` | Saved charts, metrics (`results.json`), segment profiles, embeddings, model weights |
+| `dl_results/` | Saved charts, metrics (`results.json`), segment profiles, embeddings, model weights, `segment_names.json` (friendly names and store actions for the 6 segments) |
 | `customer_segmentation.csv` | Dataset (about 2,200 supermarket customers) |
 | `requirements.txt` | Packages for the Streamlit app |
 | `requirements_train.txt` | Extra packages to retrain the models |
@@ -34,4 +34,4 @@ python dl_segmentation.py
 ## Honest results
 The autoencoder reconstructs customers better than PCA, but its clustering gain is mixed. The neural network has a better ROC-AUC than logistic regression but not a better F1.
 
-Author: Nipun Bansal
+Author: Nipun
