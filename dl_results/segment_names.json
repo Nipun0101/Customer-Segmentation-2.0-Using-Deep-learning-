@@ -1,0 +1,6 @@
+{"0":{"name":"Older mid-spenders, drifting","action":"Send reminders"},
+ "1":{"name":"Young premium","action":"Premium offers"},
+ "2":{"name":"Low-income browsers","action":"Offer deals"},
+ "3":{"name":"Affluent regulars","action":"Reward loyalty"},
+ "4":{"name":"Affluent but lapsing","action":"Win them back"},
+ "5":{"name":"Older mid-spenders, active","action":"Keep them engaged"}}
